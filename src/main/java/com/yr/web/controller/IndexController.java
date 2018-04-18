@@ -4,7 +4,7 @@
  * Copyright 2018 zbj.com, Inc. All rights reserved.
  * ZHUBAJIE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
-package com.yr.web;
+package com.yr.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

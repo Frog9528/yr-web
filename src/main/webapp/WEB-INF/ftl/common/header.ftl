@@ -4,8 +4,9 @@
     </div>
     <div class="menu">
         <span><a href="/">首页</a></span>
-        <span><a href="/">文章</a></span>
-        <span><a href="/">有趣</a></span>
+        <span><a href="/">博客</a></span>
+        <span><a href="/">趣事</a></span>
+        <span><a href="/">工具</a></span>
         <span><a href="/about">关于我</a></span>
     </div>
     <div class="welcome">

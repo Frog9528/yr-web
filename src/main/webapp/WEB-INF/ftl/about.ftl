@@ -7,7 +7,7 @@
 <body>
     <#include "common/header.ftl"/>  
     <div class="content">
-        <span>不积硅步无以至千里，不积小流无以成江海。</span>
+        <span>曾经年少爱追梦,一心只把程序写；</span>
     </div>
     <#include "common/footer.ftl"/>
 </body>

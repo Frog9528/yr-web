@@ -4,8 +4,10 @@
  * Copyright 2018 zbj.com, Inc. All rights reserved.
  * ZHUBAJIE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  */
-package com.yr.web;
+package com.yr.web.controller;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -30,12 +32,12 @@ public class ArticleController {
     /**
      * 文章列表
      */
-    private Set<String> articleIdList = new TreeSet<String>();
+    private Map<String, String> articleIdList = new LinkedHashMap<String, String>();
     
     @PostConstruct
     public void init() {
-        articleIdList.add("20180417");
-        articleIdList.add("20180418");
+        articleIdList.put("20180417", "20180417");
+        articleIdList.put("20180418", "20180418");
     }
 
     /**
@@ -43,7 +45,7 @@ public class ArticleController {
      */
     @RequestMapping("/{articleId}")
     public ModelAndView article(@PathVariable("articleId") String articleId) {
-        if (!articleIdList.contains(articleId)) {
+        if (!articleIdList.containsKey(articleId)) {
             return new ModelAndView("error/404");
         }
         return new ModelAndView("article/" + articleId);
