@@ -1,10 +1,13 @@
-body{margin:0;padding:0;min-height:100%;min-width:900px;}
+body{margin:0;padding:0;min-height:100%;min-width:900px;background:#eee;}
 
 .header{height:50px;margin-top:0px;border-bottom:1px solid #bbb;text-align:center;background-color:#375686;}
-.header .title{width:280px;height:50px;float:left;font-size:200%;color:#bbd6fe;font-family: microsoft yahei;}
-.header .welcome{margin-right:10px;float:right;width:150px;height:50px;margin-top:30px;font-size:80%;color:#cce7ff;}
+.header .title{display:block;width:280px;height:50px;float:left;font-size:200%;color:#bbd6fe;font-family: microsoft yahei;}
+.header .menu{display:block;float:left;height:50px;margin-top:0px;margin-left:40px;padding-top:27px;}
+.header .menu a{color:#fff;margin-left:20px;margin-right:20px;}
+.header .menu a:hover{color:#ddd;}
+.header .welcome{display:block;position:absolute;right:10px;width:150px;height:50px;padding-top:30px;font-size:80%;color:#cce7ff;}
 
-.content{padding:0 100px;min-height:800px;margin:0 auto;background:#eee;clear:both;}
-.content .card{float:left;width:24%;height:300px;background-color:#8261dd;border:1px solid #000;}
+.content{min-width:900px;max-width:900px;min-height:800px;margin:0 auto;background:#fff;clear:both;}
+.content .card{float:left;overflow:hidden;width:203px;height:300px;margin:10px 10px 10px 10px;background-color:#eee;border:1px solid #000;}
 
 .footer{height:40px;text-align:center;border-top:1px solid #ddd;clear:both;background-color:#375686;}
